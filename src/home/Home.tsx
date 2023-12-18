@@ -1,9 +1,10 @@
 import React from 'react';
 import './home.css'
+import Blog from '../blog/Blog';
 
 const Home = () => {
     return (
-        <div className='app'>
+        <div className='App'>
             <div className='navbar'>
                 <ul>
                     <li>Home</li>
@@ -16,6 +17,7 @@ const Home = () => {
                     <li>Nodejs</li>
                 </ul>
             </div>
+            <Blog/>
         </div>
     );
 };
