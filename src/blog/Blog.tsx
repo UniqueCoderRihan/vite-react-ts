@@ -15,7 +15,7 @@ const Blog:React.FC =() => {
     
     useEffect(()=>{
 
-        fetch('/public/blog.json').then(res=>res.json()).then(data=>setFakeDb(data))
+        fetch('/blog.json').then(res=>res.json()).then(data=>setFakeDb(data))
     },[])
     return (
         <div className='container'>
