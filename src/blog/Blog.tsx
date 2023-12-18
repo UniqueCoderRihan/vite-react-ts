@@ -20,7 +20,7 @@ const Blog:React.FC =() => {
     return (
         <div className='container'>
             <div className='blog'>
-            {fakeDb.map((blog)=> (<SingleBlog key={blog.id} blog={blog}></SingleBlog>)
+            {fakeDb.map((blog)=> (<SingleBlog  blog={blog}></SingleBlog>)
             )}
             </div>
         </div>
