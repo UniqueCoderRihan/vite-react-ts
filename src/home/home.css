@@ -50,3 +50,9 @@
    .container .card img {
     width: 100%;
    }
+   .container .card button {
+    background-color: rgb(177, 131, 221);
+    padding: 5px;
+    border-radius: 50%;
+   }
+   

@@ -18,8 +18,9 @@ const Blog = () => {
             <div className="card" key={blog.id}>
             <img src={blog.cover} alt="" />
             <div className="details">
-              <h2>{blog.title}</h2>
-              <h4>{blog.author}</h4>
+              <h2> {blog.title}</h2>
+              <h4>Author: {blog.author}</h4>
+              <button>Click</button>
             </div>
           </div>
             )}
