@@ -5,12 +5,12 @@ import SingleBlog from '../singleBlog/SingleBlog';
 
 
 const Blog:React.FC =() => {
-    type Blog ={
-        id: number,
-        title: string,
-        cover: string,
-        author: string
-    }
+    // type Blog ={
+    //     id: number,
+    //     title: string,
+    //     cover: string,
+    //     author: string
+    // }
     const [fakeDb,setFakeDb] = useState([]);
     
     useEffect(()=>{

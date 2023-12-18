@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './home.css'
 import Blog from '../blog/Blog';
 
