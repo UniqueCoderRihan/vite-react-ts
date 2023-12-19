@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import Home from './home/Home'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Details from './details/Details'
 
 // Todo: Next time you need to install react-router,
 
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path:'/',
     element: <Home/>
+  },
+  {
+    path:'/details/:id',
+    element: <Details/>
   }
 ])
 

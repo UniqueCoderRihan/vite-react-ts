@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 type singleBlogProps = {
     blog: {
@@ -11,10 +12,15 @@ type singleBlogProps = {
 }
 
 const SingleBlog:React.FC<singleBlogProps> = ({blog}) => {
-
+    const navigate = useNavigate();
+    const Blogonclick=()=>{
+        console.log('Btn clicked');
+        // <Link to='/details'></Link>
+        navigate(`/details/${blog.id}`)
+    }
     return (
-        <div className="card" key={blog.id}>
-            <img src={blog.cover} alt="" />
+        <div  className="card" key={blog.id}>
+            <img onClick={Blogonclick} src={blog.cover} alt="" />
             <div className="details">
                 <h2> {blog.title}</h2>
                 <h4>Author: {blog.author}</h4>
